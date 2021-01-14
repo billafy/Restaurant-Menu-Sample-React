@@ -1,0 +1,81 @@
+body
+{
+	font-family: 'Segoe UI';
+	line-height: 1.5;
+}
+.heading
+{
+	margin: auto;
+	text-align: center;
+	margin-top: 3rem;
+}
+.categoryTab
+{
+	text-align: center;
+	margin: 30px;
+	height: 50px;
+}
+.categoryTab button
+{
+	outline: none;
+	border : 0px;
+	background-color: white;
+	text-transform: capitalize;
+	margin: 0px 25px 0px 25px;
+	color: rgb(197,157,95);
+	font-size: 1.2rem;
+	width: 90px;
+	height: 30px;
+	border-radius: 5px;
+}
+.categoryTab button:hover
+{
+	background-color: rgb(197,157,95);
+	color: white;
+}
+.foodItems
+{
+	display: grid;
+	grid-gap: 2rem;
+}
+.foodItem
+{
+	margin: auto;
+}
+.foodImg
+{
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	border : rgb(197,157,95) solid 5px;
+	text-align: center;
+	border-radius: 5px;
+}
+.foodImg img
+{
+	max-height: 100%;
+}
+.foodDetails
+{
+	display: inline-block;
+	width: 300px;
+	margin: 30px;
+}
+.foodDetails h3
+{
+	text-transform: capitalize;
+}
+.foodDetails p
+{
+	color: rgba(0,0,0,0.7);
+}
+@media screen and (min-width: 768px)
+{
+	.foodItems
+	{
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+
